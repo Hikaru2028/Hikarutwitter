@@ -1,0 +1,122 @@
+body{
+    background-color:#3300FF;
+    color:white;
+}
+
+body a{
+    color: white;
+  }
+
+.kasen {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.yoko li{
+  float: left;
+  list-style: none;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.text{
+    font-family: 'Gabriola','MS UI Gothic', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    text-align: center;
+}
+
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+.evaluation1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .evaluation1 input[type='radio']{
+    display: none;
+  }
+  .evaluation1 label{
+    position: relative;
+    padding: 10px 10px 0;
+    color: gray;
+    cursor: pointer;
+    font-size: 50px;
+  }
+  .evaluation1 label .text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+  }
+  .evaluation1 label:hover,
+  .evaluation1 label:hover ~ label,
+  .evaluation1 input[type='radio']:checked ~ label{
+    color:yellow;
+  }
+
+
+.evaluation{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .evaluation input[type='radio']{
+    display: none;
+  }
+  .evaluation label{
+    position: relative;
+    padding: 10px 10px 0;
+    color: gray;
+    cursor: pointer;
+    font-size: 50px;
+  }
+  .evaluation label .text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+  }
+  .evaluation label:hover,
+  .evaluation label:hover ~ label,
+  .evaluation input[type='radio']:checked ~ label{
+    color: red;
+  }

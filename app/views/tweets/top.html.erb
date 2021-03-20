@@ -1,0 +1,56 @@
+<body>
+
+<ul class="yoko">
+<li><a href="tweets">index</a></li>
+
+<li><%= link_to "新規投稿へ", tweets_new_path, class:"kasen" %></li>
+</ul>
+
+<br>
+<div class="text">
+<h1>サウナイキタイ</h1>
+</div>
+
+<details>
+    <summary>Details</summary>
+    <li>Something small enough to escape casual notice.</li>
+    <li><a href="tweets">index</a></li>
+</details>
+
+<h1><i class="fas fa-pepper-hot"></i></h1>
+
+<form type="get" action="#1">
+  <div class="evaluation1">
+    <input id="star1" type="radio" name="star" value="5" />
+    <label for="star1"><span class="text">最高</span>★</label>
+    <input id="star2" type="radio" name="star" value="4" />
+    <label for="star2"><span class="text">良い</span>★</label>
+    <input id="star3" type="radio" name="star" value="3" />
+    <label for="star3"><span class="text">普通</span>★</label>
+    <input id="star4" type="radio" name="star" value="2" />
+    <label for="star4"><span class="text">悪い</span>★</label>
+    <input id="star5" type="radio" name="star" value="1" />
+    <label for="star5"><span class="text">最悪</span>★</label>
+  </div>
+</form>
+
+
+<form type="get" action="#">
+  <div class="evaluation">
+    <input id="hot1" type="radio" name="hot" value="5" />
+    <label for="hot1"><span class="text">5辛</span><i class="fas fa-pepper-hot"></i></label>
+    <input id="hot2" type="radio" name="hot" value="4" />
+    <label for="hot2"><span class="text">4辛</span><i class="fas fa-pepper-hot"></i></label>
+    <input id="hot3" type="radio" name="hot" value="3" />
+    <label for="hot3"><span class="text">3辛</span><i class="fas fa-pepper-hot"></i></label>
+    <input id="hot4" type="radio" name="hot" value="2" />
+    <label for="hot4"><span class="text">2辛</span><i class="fas fa-pepper-hot"></i></label>
+    <input id="hot5" type="radio" name="hot" value="1" />
+    <label for="hot5"><span class="text">1辛</span><i class="fas fa-pepper-hot"></i></label>
+  </div>
+</form>
+
+<i class="fas fa-pepper-hot"></i>
+
+</body>
+

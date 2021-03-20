@@ -1,0 +1,14 @@
+<h1>GeekTwitter</h1>
+<h3>新規Tweet</h3>
+
+　#空欄作るからそこに数値入れてね
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_field :body, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+ #"Tweetする"によってcreateアクションを行ってる！！　form_forの機能！！
+
+<%= link_to "Tweet一覧に戻る", tweets_path %>
